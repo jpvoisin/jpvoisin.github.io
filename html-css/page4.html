@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <style>
+            html,body {
+                margin: 0;
+                padding: 0;
+                font-family: roboto;
+                background: #FFFFFF;
+            }
+            h1 {
+                color: #BD10E0;
+            }
+            h2 {
+                color: #81069A;
+            }
+            .content {
+                margin: 15px 0;
+            }
+            .visual {
+                background-image: url(https://placekitten.com/g/3000/1024);
+                background-repeat: none;
+                background-size: cover;
+                background-position: center center;
+                width: 100%;
+                height: calc(100vh / 2);
+            }
+            .container {
+                max-width: 1400px;
+                margin: 0 auto;
+            }
+            nav {
+                overflow: hidden;
+                width: 100%;
+                background:#000000;
+                color: #FFFFFF;
+            }
+            nav ul {
+                margin: 0;
+                padding: 0;
+            }
+            nav ul > li {
+                display: flex;
+                height: 50px;
+                align-items: center;
+                margin: 0;
+                padding: 0 15px;
+                float: left;
+                list-style: none;
+            }
+
+            nav ul > li > a {
+                color: #BD10E0;
+                text-decoration: none;
+                -webkit-opacity: 0.5;
+                -moz-opacity: 0.5;
+                -ms-opacity: 0.5;
+                -o-opacity: 0.5;
+                opacity: 0.5;
+            }
+
+            nav ul > li > a:hover, nav ul > li > a.active{
+                -webkit-opacity: 1;
+                -moz-opacity: 1;
+                -ms-opacity: 1;
+                -o-opacity: 1;
+                opacity: 1;
+                border-bottom: 2px solid #BD10E0;
+            }
+
+            .button {
+                display: inline;
+                padding: 10px 15px;
+                text-decoration: none;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                border-radius: 6px;
+            }
+
+            .btn-red{
+                background: #C00000;
+                color: #FFFFFF;
+            }
+
+            .btn-blue{
+                background: #15A9E3;
+                color: #FFFFFF;
+            }
+
+            .btn-bordered-blue{
+                border: 1px solid #15A9E3;
+                color: #15A9E3;
+            }
+
+            blockquote{
+                overflow: hidden;
+                border-left: 10px solid rgb(82, 5, 97);
+                background: #BD10E0;
+                color: #FFFFFF;
+                max-width: 600px;
+                padding: 15px;
+                margin: 15px auto;
+                font-size: 30px;
+            }
+
+            blockquote span {
+                font-size: 60px;
+            }
+
+            blockquote > div {
+                float: left;
+            }
+
+            blockquote div.start, blockquote div.end {
+                display: flex;
+                width: 30px;
+                height: 100%;
+            }
+
+            blockquote div.start {
+                align-items: start;
+            }
+
+            blockquote div.end {
+                align-items: end;
+            }
+
+            blockquote div.body {
+                width: calc(100% - 60px);
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="page1.html">Step 1</a></li>
+                    <li><a href="page2.html">Step 2</a></li>
+                    <li><a href="page3.html">Step 3</a></li>
+                    <li><a href="page4.html" class="active">Step 4</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="visual"></div>
+        <div class="container">
+            <h1>Fast HTML + CSS Introduction</h1>
+            <blockquote>
+                <div class="start">
+                    <span>“</span>
+                </div>
+                <div class="body">
+                    There are three responses to a piece of design – yes, no, and WOW! Wow is the one to aim for.
+                </div>              
+            </blockquote>
+            <section class="content">
+                <p>This was a fast introduction on how to use CSS into your project, I invite you to continue your journey by following some of these sites:</p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/default.asp">W3Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">Mozilla</a></li>
+                    <li><a href="https://stackoverflow.com/">stackoverflow</a></li>
+                </ul>
+                <h2>See you again soon!</h2>
+                <div class="center">
+                    <a href="https://digitalcooking.co.th"><img src="https://digitalcooking.co.th/images/logo-digitalcooking.png?538a85e7711d620e2953ebc10ef25006" alt="digital.cooking"/></a>
+                    
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
